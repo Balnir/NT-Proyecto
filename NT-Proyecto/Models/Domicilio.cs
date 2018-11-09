@@ -11,8 +11,4 @@ namespace NT_Proyecto.Models
             public string Provincia { get; set; }
             public string Barrio { get; set; }
         }
-    public class DomicilioDBContext : DbContext
-    {
-        public DbSet<Domicilio> Domicilios { get; set; }
-    }
 }

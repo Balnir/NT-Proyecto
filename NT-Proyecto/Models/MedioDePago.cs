@@ -9,10 +9,10 @@ namespace NT_Proyecto.Models
     public class MedioDePago
     {
         public string MDP { get; set; }
-    }
+        public string NombreTitular { get; set;}
+        public string EnteEmisor { get; set; }
+        public string Banco { get; set; }
+        public string CodigoVerificador { get; set; }
 
-    public class MedioDePagoDBContext : DbContext
-    {
-        public DbSet<MedioDePago> MediosDePago { get; set; }
     }
 }

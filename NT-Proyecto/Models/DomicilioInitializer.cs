@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using NT_Proyecto.Models;
 
-namespace NT_Proyecto.Controllers
+namespace NT_Proyecto.Models
 {
-    public class AccountController : Controller
+    public class DomicilioInitializer : Controller
     {
         //
-        // GET: /Account/
-        private MarketContext db = new MarketContext();
+        // GET: /DomicilioInitializer/
+
         public ActionResult Index()
         {
             return View();
         }
+
     }
 }

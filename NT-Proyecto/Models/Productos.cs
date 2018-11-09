@@ -9,11 +9,9 @@ namespace NT_Proyecto.Models
     public class Productos
     {
         public int ID { get; set; }
-        public int Cantidad { get; set; }
-    }
-    public class ProductosDBContext : DbContext
-    {
-        public DbSet<Productos> Productos { get; set; }
+        public string Nombre { get; set; }
+        public string Marca { get; set; }
+        public decimal PrecioUnitario { get; set; }
     }
 
 }

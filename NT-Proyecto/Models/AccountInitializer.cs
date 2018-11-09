@@ -41,30 +41,4 @@ namespace NT_Proyecto.Models
             context.SaveChanges();
         }
     }
-    //public class StudentInitializer : DropCreateDatabaseAlways<StudentDBContext>
-    //{
-    //    protected override void Seed(StudentDBContext context)
-    //    {
-    //        var students = new List<Student>
-    //        {
-    //            new Student {
-    //                firstName = "Giancarlo",
-    //                lastName = "Rios",
-    //                age = 23
-    //            },
-    //            new Student {
-    //                firstName = "Jose",
-    //                lastName = "Cabrales",
-    //                age = 21
-    //            },
-    //            new Student {
-    //                firstName = "Pepe",
-    //                lastName = "Esposito",
-    //                age = 22
-    //            }
-    //        };
-    //        students.ForEach(s => context.Student.Add(s));
-    //        context.SaveChanges();
-    //    }
-    //}
 }
