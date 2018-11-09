@@ -8,13 +8,11 @@ namespace NT_Proyecto.Models
 {
     public class Ventas
     {
+
+        public int ID { get; set; }
         public Account Account { get; set; }
         public MedioDePago MedioDePago { get; set; }
-        public virtual ICollection<Productos> Productos { get; set; }
+        public virtual ICollection<VentaProducto> VentaProductos { get; set; }
 
-        public class VentasDBContext : DbContext
-        {
-            public DbSet<Ventas> Ventas { get; set; }
-        }
     }
 }
