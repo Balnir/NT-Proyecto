@@ -32,3 +32,37 @@ C:\Users\guillermo.antun\Documents\Visual Studio 2013\Projects\NT-Proyecto\NT-Pr
 C:\Users\guillermo.antun\Documents\Visual Studio 2013\Projects\NT-Proyecto\NT-Proyecto\obj\Debug\NT-Proyecto.csproj.CopyComplete
 C:\Users\guillermo.antun\Documents\Visual Studio 2013\Projects\NT-Proyecto\NT-Proyecto\obj\Debug\NT-Proyecto.dll
 C:\Users\guillermo.antun\Documents\Visual Studio 2013\Projects\NT-Proyecto\NT-Proyecto\obj\Debug\NT-Proyecto.pdb
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\NT-Proyecto.dll.config
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\NT-Proyecto.dll
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\NT-Proyecto.pdb
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\Antlr3.Runtime.dll
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\EntityFramework.dll
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\Newtonsoft.Json.dll
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\System.Net.Http.Formatting.dll
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\System.Web.Http.dll
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\System.Web.Http.WebHost.dll
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\System.Web.Mvc.dll
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\System.Web.Optimization.dll
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\System.Web.Providers.dll
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\System.Web.Razor.dll
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\System.Web.WebPages.dll
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\System.Web.WebPages.Razor.dll
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\WebGrease.dll
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\EntityFramework.xml
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\Newtonsoft.Json.xml
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\System.Net.Http.Formatting.xml
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\System.Web.Http.xml
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\System.Web.Http.WebHost.xml
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\System.Web.Mvc.xml
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\System.Web.Razor.xml
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\System.Web.WebPages.xml
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\bin\System.Web.WebPages.Razor.xml
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\obj\Debug\NT-Proyecto.csprojAssemblyReference.cache
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\obj\Debug\NT-Proyecto.csproj.CoreCompileInputs.cache
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\obj\Debug\NT-Proyecto.csproj.CopyComplete
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\obj\Debug\NT-Proyecto.dll
+C:\Users\DSGonzalez\Documents\David Gonzalez\ORT\Semestre2\NuevasTecnologias\NT-Proyecto\NT-Proyecto\obj\Debug\NT-Proyecto.pdb

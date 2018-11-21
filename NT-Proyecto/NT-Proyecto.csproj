@@ -145,6 +145,27 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\img\almacen-superior.PNG" />
+    <Content Include="Content\img\almacen.jpg" />
+    <Content Include="Content\img\almacen.PNG" />
+    <Content Include="Content\img\bebidas-superior.PNG" />
+    <Content Include="Content\img\bebidas.PNG" />
+    <Content Include="Content\img\carrefour.PNG" />
+    <Content Include="Content\img\congelados-superior.PNG" />
+    <Content Include="Content\img\congelados.PNG" />
+    <Content Include="Content\img\coto.png" />
+    <Content Include="Content\img\disco.jpg" />
+    <Content Include="Content\img\item-imagen.PNG" />
+    <Content Include="Content\img\lacteos-superior.PNG" />
+    <Content Include="Content\img\lacteos.PNG" />
+    <Content Include="Content\img\limpieza-superior.PNG" />
+    <Content Include="Content\img\limpieza.jpg" />
+    <Content Include="Content\img\limpieza.PNG" />
+    <Content Include="Content\img\logo.svg" />
+    <Content Include="Content\img\perfumeria-superior.PNG" />
+    <Content Include="Content\img\perfumeria.PNG" />
+    <Content Include="Content\img\walmart.jfif" />
+    <Content Include="Content\img\walmart.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -173,6 +194,7 @@
     <Content Include="Content\themes\base\jquery.ui.slider.css" />
     <Content Include="Content\themes\base\jquery.ui.tabs.css" />
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\style.css" />
     <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
