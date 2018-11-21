@@ -1,0 +1,142 @@
+﻿.barra {
+    padding-top: 20px;
+}
+
+.busqueda {
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    line-height: 1;
+    width: 100%;
+    // Add this
+}
+
+.seccion {
+    margin-top: 2em;
+    margin-left: 1em;
+}
+
+.categoria {
+    height: 21em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.margen {
+    margin: 20px;
+}
+
+.categoria-etiqueta-sm {
+    position: absolute;
+    top: 78%;
+    background-color: rgba(255,255,255,0.85);
+    width: 85%;
+    margin-left: 3%;
+    text-align: center;
+}
+
+.categoria-etiqueta-lg {
+    position: absolute;
+    top: 78%;
+    background-color: rgba(255,255,255,0.85);
+    width: 92%;
+    margin-left: 1.5%;
+    text-align: center;
+}
+
+.super {
+    height: 10em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pie {
+    margin-top: 50px;
+    background-color: #4B4B4B;
+    height: 100px;
+}
+
+.superior {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.categoria-seccion {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.supermercado-seccion {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.item-contenedor {
+    height: 350px;
+    width: 200px;
+    border: 1px solid #BFBFBF;
+}
+
+.item-imagen {
+    margin-top: 10px;
+    height: 180px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../../img/item-imagen.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.item-descripcion {
+    margin-top: 10px;
+    height: auto;
+    max-height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.item-precio {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.item-comprar {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    margin-top: 20px;
+    height: 20px;
+}
+
+
+.item-comprar-selector {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.item-comprar-cantidad {
+    width: 35px !important;
+    padding: 1;
+}
+
+.separador {
+    width: 10px;
+}
+
+.item-comprar-agregar {
+    background-color: #4B4B4B;
+    color: white;
+}
