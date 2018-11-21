@@ -1,19 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
-using System.Web.Mvc;
 
 namespace NT_Proyecto.Models
 {
-    public class DomicilioInitializer : Controller
+    public class DomicilioInitializer : DropCreateDatabaseAlways<MarketContext>
     {
-        //
-        // GET: /DomicilioInitializer/
-
-        public ActionResult Index()
+        protected override void Seed(MarketContext context)
         {
-            return View();
+            var accounts = new List<Domicilio>
+            {
+                new Domicilio
+                {
+                    Provincia = "Capital Federal",
+                    Barrio = "Belgrano"
+                },
+                new Domicilio
+                {
+                    Provincia = "Capital Federal",
+                    Barrio = "Saavedra"
+                },
+                new Domicilio
+                {
+                    Provincia = "Capital Federal",
+                    Barrio = "Monserrat"
+                },
+            };
+            accounts.ForEach(s => context.Domicilios.Add(s));
+            context.SaveChanges();
         }
 
     }

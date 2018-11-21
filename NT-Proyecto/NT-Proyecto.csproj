@@ -135,7 +135,10 @@
     </Compile>
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\AccountInitializer.cs" />
+    <Compile Include="Models\MarketContext.cs" />
+    <Compile Include="Models\VentaProducto.cs" />
     <Compile Include="Models\Domicilio.cs" />
+    <Compile Include="Models\DomicilioInitializer.cs" />
     <Compile Include="Models\MedioDePago.cs" />
     <Compile Include="Models\Productos.cs" />
     <Compile Include="Models\Ventas.cs" />

@@ -6,9 +6,9 @@ using System.Web;
 
 namespace NT_Proyecto.Models
 {
-    public class AccountInitializer : DropCreateDatabaseAlways<AccountDBContext>
+    public class AccountInitializer : DropCreateDatabaseAlways<MarketContext>
     {
-        protected override void Seed(AccountDBContext context)
+        protected override void Seed(MarketContext context)
         {
             var accounts = new List<Account>
             {
@@ -17,7 +17,7 @@ namespace NT_Proyecto.Models
                     Nombre = "Guillermo",
                     Apellido = "Antun",
                     NroTelefono = "12398123987123",
-                    Email = "Guillermo.Antun@ventas.com.ar",
+                    Email = "Guillermo.Antun@markost.com.ar",
                     Password = "asdf"
                 },
                 new Account
@@ -25,7 +25,7 @@ namespace NT_Proyecto.Models
                     Nombre = "David",
                     Apellido = "Gonzalez",
                     NroTelefono = "112329783",
-                    Email = "David.Gonzalez@ventas.com.ar",
+                    Email = "David.Gonzalez@markost.com.ar",
                     Password = "asdf"
                 },
                 new Account
@@ -33,7 +33,7 @@ namespace NT_Proyecto.Models
                     Nombre = "Mariana",
                     Apellido = "Carballal",
                     NroTelefono = "1238132823",
-                    Email = "Mariana.Carballal@ventas.com.ar",
+                    Email = "Mariana.Carballal@markost.com.ar",
                     Password = "asdf"
                 }
             };
