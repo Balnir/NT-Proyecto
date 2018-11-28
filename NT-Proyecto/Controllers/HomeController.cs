@@ -16,5 +16,10 @@ namespace NT_Proyecto.Controllers
             return View();
         }
 
+        public ActionResult Categoria()
+        {
+            return View();
+        }
+
     }
 }
