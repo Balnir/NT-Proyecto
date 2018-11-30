@@ -8,9 +8,9 @@
     @Scripts.Render("~/bundles/modernizr")
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
             <div class="flex-row">
                 <div class="col-md-4">
                     <div class="navbar-header">
-                        <a class="navbar-brand marca" href="#">Markost</a>
+                        <a class="navbar-brand marca" href="@Url.Action("Index", "Home")">Markost</a>
                     </div>
                 </div>
                 <div class="col-md-4 busqueda">
@@ -41,13 +41,41 @@
                 <div class="col-md-4">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Carrito</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li><a href="@Url.Action("Registro", "Home")"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
+                        <li><a data-target="#myModal" data-toggle="modal" href="#myModal"><span class="glyphicon glyphicon-log-in" id="login"></span> Login</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style="padding-left: 50px;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2>Ingresar</h2>
+                </div>
+                <div class="modal-body" style="padding-left: 50px; padding-right: 50px;">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Usuario</label>
+                            <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Contraseña</label>
+                            <input type="text" class="form-control" id="psw" placeholder="Enter password">
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer" style="padding-right: 50px;">
+                    <p>No sos cliente? <a href="@Url.Action("Registro", "Home")">Registrate</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

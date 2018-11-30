@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "Registro";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    @Scripts.Render("~/Content")
+}
+
+<section>
+    <form class="margen">
+        <h3>Usuario</h3>
+        <hr />
+        <div class="row margen">
+            <div class="col-md-3">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre">
+            </div>
+            <div class="col-md-3">
+                <label for="last-name">Apellido</label>
+                <input type="text" name="last-name" class="form-control" id="last-name" placeholder="Apellido">
+            </div>
+            <div class="col-md-3">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="e-mail">
+            </div>
+        </div>
+        <div class="row margen">
+            <div class="col-md-3">
+                <label for="user">Usuario</label>
+                <input type="text" name="user" class="form-control" id="user" placeholder="usuario">
+            </div>
+            <div class="col-md-3">
+                <label for="pass">Contraseña</label>
+                <input type="password" name="pass" class="form-control" id="pass" placeholder="contraeña">
+            </div>
+            <div class="col-md-3">
+                <label for="pass2">Reingrese contraseña</label>
+                <input type="password" name="pass2" class="form-control" id="pass2" placeholder="reingrese contraseña">
+            </div>
+        </div>
+        <h3>Envío</h3>
+        <hr />
+        <div class="row margen">
+            <div class="col-md-3">
+                <label for="barrio">Barrio</label>
+                <select class="form-control" id="barrio" name="barrio"></select>
+            </div>
+            <div class="col-md-6">
+                <label for="addres">Dirección</label>
+                <input type="text" name="addres" class="form-control" id="addres" placeholder="Dirección">
+            </div>
+        </div>
+        <h3>Pago</h3>
+        <hr />
+        <div class="row margen">
+            <div class="col-md-3">
+                <label for="tarjeta">Tarjeta</label>
+                <select class="form-control" id="tarjeta" name="tarjeta">
+                    <option selected>Seleccione tarjeta</option>
+                    <option value="visa">Visa</option>
+                    <option value="amex">AMEX</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="tarjeta-numero">Numero</label>
+                <input type="text" name="tarjeta-numero" class="form-control" id="tarjeta-numero" placeholder="Numero de tarjeta">
+            </div>
+            <div class="col-md-2">
+                <label for="tarjeta-vencimiento">Vencimiento</label>
+                <input type="text" name="tarjeta-vencimiento" class="form-control" id="tarjeta-vencimiento" placeholder="MMAA">
+            </div>
+            <div class="col-md-2">
+                <label for="tarjeta-codigo">Cod de Seguridad</label>
+                <input type="text" name="tarjeta-codigo" class="form-control" id="tarjeta-codigo" placeholder="Cod">
+            </div>
+
+        </div>
+        <div class="row margen">
+            <div class="col-md-9 registro">
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+            </div>
+
+        </div>
+    </form>
+
+</section>
+
+<!--<script type="text/javascript" src="~/Content/JavaScript.js"></script>-->
