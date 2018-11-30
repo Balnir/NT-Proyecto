@@ -21,5 +21,10 @@ namespace NT_Proyecto.Controllers
             return View();
         }
 
+        public ActionResult Supermercado()
+        {
+            return View();
+        }
+
     }
 }

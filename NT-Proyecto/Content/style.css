@@ -1,5 +1,5 @@
 ﻿.barra {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .busqueda {
@@ -14,6 +14,7 @@
     max-width: 100%;
     line-height: 1;
     width: 100%;
+    margin-top: 70px;
 }
 
 .seccion {
@@ -79,23 +80,24 @@
 
 .supermercado-seccion {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 300px;
 }
 
 .item-contenedor {
     height: 350px;
-    width: 200px;
+    width: 250px;
     border: 1px solid #BFBFBF;
 }
 
 .item-imagen {
     margin-top: 10px;
+    margin-left: 25px;
     height: 180px;
-    width: 100%;
+    width: 75%;
     background-repeat: no-repeat;
     background-image: url(~/Content/img/item-imagen.PNG);
     background-size: contain;
-    background-position: center;
+    background-position: right;
 }
 
 .item-descripcion {
