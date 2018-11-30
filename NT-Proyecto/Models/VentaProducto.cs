@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
+using System.ComponentModel;
+
 
 namespace NT_Proyecto.Models
 {
@@ -9,11 +13,13 @@ namespace NT_Proyecto.Models
     {
         public VentaProducto()
         {
-            this.Ventas = new HashSet<Ventas>();
+            this.ventas = new HashSet<Ventas>();
         }
-
-        public virtual ICollection<Ventas> Ventas { get; set; }
-        public int Cantidad { get; set; }
+        [Key]
+        [Required]
+        public int VentaProductoID { get; set; }
+        public virtual ICollection<Ventas> ventas { get; set; }
+        public int cantidad { get; set; }
 
         //public Libros()
         //{

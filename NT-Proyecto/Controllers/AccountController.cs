@@ -16,5 +16,25 @@ namespace NT_Proyecto.Controllers
         {
             return View();
         }
+        public ActionResult Create()
+        {
+            return View("Create");
+        }
+        //
+        // POST: /Student/
+        [HttpPost]
+        public ActionResult Create(Account Account, Domicilio domicilio, MedioDePago medioDePago)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Accounts.Add(Account);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(Account);
+            }
+        }
     }
 }

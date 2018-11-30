@@ -14,45 +14,45 @@ namespace NT_Proyecto.Models
             {
                 new Account
                 {
-                    Nombre = "Guillermo",
-                    Apellido = "Antun",
-                    NroTelefono = "12398123987123",
-                    Email = "Guillermo.Antun@markost.com.ar",
-                    Password = "asdf"
+                    nombre = "Guillermo",
+                    apellido = "Antun",
+                    nroTelefono = "12398123987123",
+                    email = "Guillermo.Antun@markost.com.ar",
+                    password = "asdf"
                 },
                 new Account
                 {
-                    Nombre = "David",
-                    Apellido = "Gonzalez",
-                    NroTelefono = "112329783",
-                    Email = "David.Gonzalez@markost.com.ar",
-                    Password = "asdf"
+                    nombre = "David",
+                    apellido = "Gonzalez",
+                    nroTelefono = "112329783",
+                    email = "David.Gonzalez@markost.com.ar",
+                    password = "asdf"
                 },
                 new Account
                 {
-                    Nombre = "Mariana",
-                    Apellido = "Carballal",
-                    NroTelefono = "1238132823",
-                    Email = "Mariana.Carballal@markost.com.ar",
-                    Password = "asdf"
+                    nombre = "Mariana",
+                    apellido = "Carballal",
+                    nroTelefono = "1238132823",
+                    email = "Mariana.Carballal@markost.com.ar",
+                    password = "asdf"
                 }
             };
             var domicilios = new List<Domicilio>
             {
                 new Domicilio
                 {
-                    Provincia = "Capital Federal",
-                    Barrio = "Belgrano"
+                    provincia = "Capital Federal",
+                    barrio = "Belgrano"
                 },
                 new Domicilio
                 {
-                    Provincia = "Capital Federal",
-                    Barrio = "Saavedra"
+                    provincia = "Capital Federal",
+                    barrio = "Saavedra"
                 },
                 new Domicilio
                 {
-                    Provincia = "Capital Federal",
-                    Barrio = "Monserrat"
+                    provincia = "Capital Federal",
+                    barrio = "Monserrat"
                 },
             };
             var mediosdepagos = new List<MedioDePago>
@@ -60,18 +60,18 @@ namespace NT_Proyecto.Models
                 new MedioDePago
                 {
                     MDP = "Tarjeta Credito",
-                    NombreTitular = "GUILLERMO ANTUN",
-                    EnteEmisor = "VISA",
-                    Banco = "BBVA",
-                    CodigoVerificador = "12345"
+                    nombreTitular = "GUILLERMO ANTUN",
+                    enteEmisor = "VISA",
+                    banco = "BBVA",
+                    codigoVerificador = "12345"
                 },
                 new MedioDePago
                 {
                     MDP = "Tarjeta Debito",
-                    NombreTitular = "GUILLERMO ANTUN",
-                    EnteEmisor = "VISA",
-                    Banco = "BBVA",
-                    CodigoVerificador = "54321"
+                    nombreTitular = "GUILLERMO ANTUN",
+                    enteEmisor = "VISA",
+                    banco = "BBVA",
+                    codigoVerificador = "54321"
                 }
             };
             accounts.ForEach(s => context.Accounts.Add(s));
