@@ -1,2 +1,3 @@
-.vs/
-NT-Proyecto/obj/Debug/
+.vs/*
+NT-Proyecto/bin/*
+NT-Proyecto/obj/Debug/*

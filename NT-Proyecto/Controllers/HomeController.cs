@@ -26,5 +26,10 @@ namespace NT_Proyecto.Controllers
             return View();
         }
 
+        public ActionResult Registro()
+        {
+            return View();
+        }
+
     }
 }
