@@ -1,41 +1,4 @@
-﻿$(document).ready(function () {
-
-    var quantitiy = 0;
-    $('.qty-plus').click(function (e) {
-
-        // Stop acting like a button
-        e.preventDefault();
-        // Get the field name
-        var quantity = parseInt($('#qty').val());
-
-        // If is not undefined
-
-        $('#qty').val(quantity + 1);
-
-
-        // Increment
-
-    });
-
-    $('.qty-minus').click(function (e) {
-        // Stop acting like a button
-        e.preventDefault();
-        // Get the field name
-        var quantity = parseInt($('#qty').val());
-
-        // If is not undefined
-
-        // Increment
-        if (quantity > 1) {
-            $('#qty').val(quantity - 1);
-        }
-    });
-
-});
-
-
-
-$("#login").click(function () {
+﻿$("#login").click(function () {
     $("#myModal").modal();
 });
 
