@@ -16,12 +16,51 @@ namespace NT_Proyecto.Controllers
             return View();
         }
 
-        public ActionResult Categoria()
+        public ActionResult Almacen()
         {
             return View();
         }
 
-        public ActionResult Supermercado()
+        public ActionResult Bebidas()
+        {
+            return View();
+        }
+
+        public ActionResult Congelados()
+        {
+            return View();
+        }
+
+        public ActionResult Lacteos()
+        {
+            return View();
+        }
+
+        public ActionResult Limpieza()
+        {
+            return View();
+        }
+
+        public ActionResult Perfumeria()
+        {
+            return View();
+        }
+
+        public ActionResult Coto()
+        {
+            return View();
+        }
+        public ActionResult Disco()
+        {
+            return View();
+        }
+
+        public ActionResult Walmart()
+        {
+            return View();
+        }
+
+        public ActionResult Carrefour()
         {
             return View();
         }
