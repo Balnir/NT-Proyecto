@@ -134,11 +134,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Account.cs" />
-    <Compile Include="Models\AccountInitializer.cs" />
     <Compile Include="Models\MarketContext.cs" />
     <Compile Include="Models\VentaProducto.cs" />
     <Compile Include="Models\Domicilio.cs" />
-    <Compile Include="Models\DomicilioInitializer.cs" />
     <Compile Include="Models\MedioDePago.cs" />
     <Compile Include="Models\Productos.cs" />
     <Compile Include="Models\Ventas.cs" />
@@ -223,9 +221,15 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\barrios.json" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\JavaScript.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
@@ -256,9 +260,24 @@
     <Content Include="Views\Account\Delete.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Ventas\Detail.cshtml" />
+    <Content Include="Views\Home\Bebidas.cshtml" />
+    <Content Include="Views\Home\Registro.cshtml" />
+    <Content Include="Views\Home\Supermercado.cshtml" />
+    <Content Include="Views\Shared\Editable.cshtml" />
+    <Content Include="Views\Home\Lacteos.cshtml" />
+    <Content Include="Views\Home\Limpieza.cshtml" />
+    <Content Include="Views\Home\Perfumeria.cshtml" />
+    <Content Include="Views\Home\Almacen.cshtml" />
+    <Content Include="Views\Home\Congelados.cshtml" />
+    <Content Include="Views\Home\Coto.cshtml" />
+    <Content Include="Views\Home\Disco.cshtml" />
+    <Content Include="Views\Home\Walmart.cshtml" />
+    <Content Include="Views\Home\Carrefour.cshtml" />
+    <Content Include="Views\Home\Busqueda.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\img\productos\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

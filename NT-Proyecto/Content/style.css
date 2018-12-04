@@ -91,13 +91,12 @@
 
 .item-imagen {
     margin-top: 10px;
-    margin-left: 25px;
+    margin-left: 20px;
     height: 180px;
-    width: 75%;
+    width: 85%;
     background-repeat: no-repeat;
-    background-image: url(~/Content/img/item-imagen.PNG);
     background-size: contain;
-    background-position: right;
+    background-position: center;
 }
 
 .item-descripcion {
@@ -122,22 +121,36 @@
     height: 20px;
 }
 
-
-.item-comprar-selector {
-    padding-left: 2px;
-    padding-right: 2px;
-}
-
 .item-comprar-cantidad {
-    width: 35px !important;
-    padding: 1;
-}
-
-.separador {
-    width: 10px;
+    text-align: center;
 }
 
 .item-comprar-agregar {
     background-color: #4B4B4B;
     color: white;
+}
+
+.registro {
+    padding-top: 30px;
+}
+
+invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.form-control.is-invalid:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220,53,69,.25);
+}
+
+.has-success .form-control {
+    border-color: rgb(204, 204,204) !important;
+}
+
+.has-success .control-label {
+    color: #333333 !important;
 }
