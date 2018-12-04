@@ -1,4 +1,5 @@
-﻿@model NT_Proyecto.Models.Account
+﻿@using NT_Proyecto.Models
+@model Account
 
 <script src="~/Scripts/jquery-1.8.2.min.js"></script>
 <script src="~/Scripts/jquery.validate.min.js"></script>
@@ -6,45 +7,72 @@
 
 <fieldset>
     <div class="editor-label">
-        @Html.LabelFor(model => model.nombre)
+        @Html.LabelFor(model => model.Nombre)
     </div>
     <div class="editor-field">
-        @Html.EditorFor(model => model.nombre)
-        @Html.ValidationMessageFor(model => model.nombre)
+        @Html.EditorFor(model => model.Nombre)
+        @Html.ValidationMessageFor(model => model.Nombre)
     </div>
 
     <div class="editor-label">
-        @Html.LabelFor(model => model.apellido)
+        @Html.LabelFor(model => model.Apellido)
     </div>
     <div class="editor-field">
-        @Html.EditorFor(model => model.apellido)
-        @Html.ValidationMessageFor(model => model.apellido)
+        @Html.EditorFor(model => model.Apellido)
+        @Html.ValidationMessageFor(model => model.Apellido)
     </div>
 
     <div class="editor-label">
-        @Html.LabelFor(model => model.nroTelefono)
+        @Html.LabelFor(model => model.NroTelefono)
     </div>
     <div class="editor-field">
-        @Html.EditorFor(model => model.nroTelefono)
-        @Html.ValidationMessageFor(model => model.nroTelefono)
+        @Html.EditorFor(model => model.NroTelefono)
+        @Html.ValidationMessageFor(model => model.NroTelefono)
     </div>
 
     <div class="editor-label">
-        @Html.LabelFor(model => model.email)
+        @Html.LabelFor(model => model.Email)
     </div>
     <div class="editor-field">
-        @Html.EditorFor(model => model.email)
-        @Html.ValidationMessageFor(model => model.email)
+        @Html.EditorFor(model => model.Email)
+        @Html.ValidationMessageFor(model => model.Email)
     </div>
-    <div class="editor-label"</div>
-        @Html.LabelFor(model => model.domicilio)
+    <div>
+        @Html.LabelFor(model => model.Domicilio)
+    </div>
+    <div>
+        @Html.DropDownListFor(model => model.Domicilio.Barrio, new SelectList(Enum.GetValues(typeof(Barrio))), "Elegir Barrio")
+        @Html.EditorFor(model => model.Domicilio.Direccion)
+        @Html.ValidationMessageFor(model => model.Domicilio.Direccion)
     </div>
     <div class="editor-label">
-        @Html.LabelFor(model => model.password)
+        @Html.LabelFor(model => model.Password)
     </div>
     <div class="editor-field">
-        @Html.EditorFor(model => model.password)
-        @Html.ValidationMessageFor(model => model.password)
+        @Html.EditorFor(model => model.Password)
+        @Html.ValidationMessageFor(model => model.Password)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(model => model.ConfirmPassword)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.ConfirmPassword)
+        @Html.ValidationMessageFor(model => model.ConfirmPassword)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(model => model.MedioDePago)
+    </div>
+    <div class="editor-field">
+        @Html.DropDownListFor(model => model.MedioDePago.nombreEmisor, new SelectList(Enum.GetValues(typeof(EnteEmisor))), "Emisor Tarjeta")
+        @Html.ValidationMessageFor(model => model.MedioDePago.nombreEmisor)
+        @Html.EditorFor(model => model.MedioDePago.nroTarjeta, new { htmlAttributes = new { placeholder = "XXXX-XXXX-XXXX-XXXX" } })
+        @Html.ValidationMessageFor(model => model.MedioDePago.nroTarjeta)
+        @Html.EditorFor(model => model.MedioDePago.nombreTitular, new { htmlAttributes = new { placeholder = "Titular" } })
+        @Html.ValidationMessageFor(model => model.MedioDePago.nombreTitular)
+        @Html.EditorFor(model => model.MedioDePago.vencimiento, new { htmlAttributes = new { placeholder = "MMAA" } })
+        @Html.ValidationMessageFor(model => model.MedioDePago.vencimiento)
+        @Html.EditorFor(model => model.MedioDePago.codigoVerificador, new { htmlAttributes = new { placeholder = "XXX" } })
+        @Html.ValidationMessageFor(model => model.MedioDePago.codigoVerificador)
     </div>
 
     <p>

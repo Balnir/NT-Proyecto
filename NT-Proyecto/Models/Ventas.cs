@@ -15,9 +15,9 @@ namespace NT_Proyecto.Models
         [Key]
         [Required]
         public int ID { get; set; }
-        public Account account { get; set; }
-        public MedioDePago medioDePago { get; set; }
-        public virtual ICollection<VentaProducto> ventaProductos { get; set; }
+        public Account Account { get; set; }
+        public MedioDePago MedioDePago { get; set; }
+        public virtual ICollection<VentaProducto> VentaProductos { get; set; }
 
     }
 }

@@ -14,69 +14,36 @@ namespace NT_Proyecto.Models
             {
                 new Account
                 {
-                    nombre = "Guillermo",
-                    apellido = "Antun",
-                    nroTelefono = "12398123987123",
-                    email = "Guillermo.Antun@markost.com.ar",
-                    password = "asdf"
+                    Nombre = "Guillermo",
+                    Apellido = "Antun",
+                    NroTelefono = "12398123987123",
+                    Email = "Guillermo.Antun@markost.com.ar",
+                    Password = "asdf"
+                    //domicilio = new Domicilio(1,Barrio.Almagro, "callefalsa1234"),
+                    //medioDePago = new MedioDePago(1,"1234567890123456","GUILLERMOANTUN",EnteEmisor.Visa,"0121","111")
                 },
                 new Account
                 {
-                    nombre = "David",
-                    apellido = "Gonzalez",
-                    nroTelefono = "112329783",
-                    email = "David.Gonzalez@markost.com.ar",
-                    password = "asdf"
+                    Nombre = "David",
+                    Apellido = "Gonzalez",
+                    NroTelefono = "112329783",
+                    Email = "David.Gonzalez@markost.com.ar",
+                    Password = "asdf"
+                    //domicilio = new Domicilio(2,Barrio.Almagro, "callefalsa1233"),
+                    //medioDePago = new MedioDePago(2,"1111222233334444","DAVIDGONZALEZ",EnteEmisor.Visa,"0122","222")
                 },
                 new Account
                 {
-                    nombre = "Mariana",
-                    apellido = "Carballal",
-                    nroTelefono = "1238132823",
-                    email = "Mariana.Carballal@markost.com.ar",
-                    password = "asdf"
-                }
-            };
-            var domicilios = new List<Domicilio>
-            {
-                new Domicilio
-                {
-                    provincia = "Capital Federal",
-                    barrio = "Belgrano"
-                },
-                new Domicilio
-                {
-                    provincia = "Capital Federal",
-                    barrio = "Saavedra"
-                },
-                new Domicilio
-                {
-                    provincia = "Capital Federal",
-                    barrio = "Monserrat"
-                },
-            };
-            var mediosdepagos = new List<MedioDePago>
-            {
-                new MedioDePago
-                {
-                    MDP = "Tarjeta Credito",
-                    nombreTitular = "GUILLERMO ANTUN",
-                    enteEmisor = "VISA",
-                    banco = "BBVA",
-                    codigoVerificador = "12345"
-                },
-                new MedioDePago
-                {
-                    MDP = "Tarjeta Debito",
-                    nombreTitular = "GUILLERMO ANTUN",
-                    enteEmisor = "VISA",
-                    banco = "BBVA",
-                    codigoVerificador = "54321"
+                    Nombre = "Mariana",
+                    Apellido = "Carballal",
+                    NroTelefono = "1238132823",
+                    Email = "Mariana.Carballal@markost.com.ar",
+                    Password = "asdf"
+                    //domicilio = new Domicilio(3,Barrio.Almagro, "callefalsa1232"),
+                    //medioDePago = new MedioDePago(3,"6543210987654321","MARIANACARBALLAL",EnteEmisor.Visa,"0123","333")
                 }
             };
             accounts.ForEach(s => context.Accounts.Add(s));
-            domicilios.ForEach(s => context.Domicilios.Add(s));
-            mediosdepagos.ForEach(s => context.MedioDePagos.Add(s));
             context.SaveChanges();
         }
     }
