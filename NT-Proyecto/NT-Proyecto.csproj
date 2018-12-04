@@ -273,6 +273,7 @@
     <Content Include="Views\Home\Disco.cshtml" />
     <Content Include="Views\Home\Walmart.cshtml" />
     <Content Include="Views\Home\Carrefour.cshtml" />
+    <Content Include="Views\Home\Busqueda.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

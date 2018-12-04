@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Categoria";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{string busqueda = Request["busqueda"];}
+@Scripts.Render("~/Scripts/js")
+<section>
+    <div class="container-fluid" id="banner">
+    </div>
+</section>
+<section>
+    <div class="container-fluid" id="container">
+        <h1 class="categoria-seccion" hidden>@busqueda</h1>
+        <hr />
+    </div>
+</section>
+<section>
+    <div class="container-fluid pie">
+        <div class="row margen"></div>
+    </div>
+</section>

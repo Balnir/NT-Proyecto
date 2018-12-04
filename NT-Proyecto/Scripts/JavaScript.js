@@ -14,7 +14,6 @@ $(document).ready(function () {
 
     const url = 'https://api.myjson.com/bins/rrlzm';
 
-
     $.getJSON(url, function (data) {
         $.each(data, function (key, entry) {
             dropdown.append($('<option></option>').attr('value', entry.abbreviation).text(entry.name));
@@ -39,9 +38,7 @@ $(document).ready(function () {
 
 /*validate tarjeta*/
 $("#tarjeta").change(function () {
-    var selector = document.getElementById('tarjeta');
-    var value = selector[selector.selectedIndex].value;
-
+    
     bootstrapValidate('#tarjeta-numero', 'numeric:Ingrese sólo números');
     bootstrapValidate('#tarjeta-codigo', 'numeric:Ingrese sólo números');
 
@@ -64,6 +61,7 @@ $(document).ready(function () {
 
     var url
     let banner = $('#banner');
+    var categoria;
 
     if ($('h1').text() == "Almacen") {
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/almacen-superior.png"></div>');
@@ -87,7 +85,11 @@ $(document).ready(function () {
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/walmart.png"></div>');
     } else if ($('h1').text() == "Carrefour") {
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/carrefour2.jpg"></div>');
-    } 
+    } else {
+        banner.append('<div class="col-md-12"><img class="superior"></div>');
+        url = 'https://api.myjson.com/bins/1ddxcu';
+        categoria = $('h1').text();
+    }
     
     var i = 0;
     var j = 0;
@@ -95,38 +97,47 @@ $(document).ready(function () {
     $.getJSON(url, function (data) {
         $.each(data, function (key, entry) {
 
-            let rows = $('#container');
-            var result = i % 4;
+            var tags = entry.tags.split(' ');
+            var display = 0;
+            tags.forEach(function (tag){
+                if (categoria.includes(tag) && (display==0)) {
 
-            if (result == 0) {
-                j = i;
-                rows.append('<div class="row margen" id="row_productos'+j+'">');
-            }
+                    let rows = $('#container');
+                    var result = i % 4;
 
-            let row_items = $("#row_productos"+j);
-            row_items.append('<div class="col-md-3" id="col_producto'+i+'"><div class="item-contenedor" id="producto_contenedor'+i+'">');
-            let items = $("#producto_contenedor"+i);
+                    if (result == 0) {
+                        j++;
+                        rows.append('<div class="row margen" id="row_productos' + j + '">');
+                    }
 
-            items.append('<div id="producto_img'+i+'">')
-            let items_img = $("#producto_img"+i);
-            items_img.append($('<img class="item-imagen">').attr('src', entry.imagen));
-            items.append('</div>');
+                    let row_items = $("#row_productos" + j);
+                    row_items.append('<div class="col-md-3" id="col_producto' + i + '"><div class="item-contenedor" id="producto_contenedor' + i + '">');
+                    let items = $("#producto_contenedor" + i);
+
+                    items.append('<div id="producto_img' + i + '">')
+                    let items_img = $("#producto_img" + i);
+                    items_img.append($('<img class="item-imagen">').attr('src', entry.imagen));
+                    items.append('</div>');
+
+                    items.append('<div class="item-descripcion" id = "producto_des' + i + '">');
+                    let items_des = $("#producto_des" + i);
+                    items_des.append($('<p></p>').text(entry.descripcion));
+                    items.append('</div>');
+
+                    items.append('<div class="item-precio" id="producto_pre' + i + '">');
+                    let items_pre = $("#producto_pre" + i);
+                    items_pre.append($('<h4></h4>').text(entry.precio));
+                    items.append('</div>');
+
+                    items.append('<div class="item-comprar"><div class= "input-group"><input type="number" name="cantidad" class="form-control item-comprar-cantidad" value="1" min="1" max="20"><span class="input-group-btn"><button type="button" class="btn btn-default item-comprar-agregar" data-type="" data-field="">AGREGAR</button></span></div></div></div></div>');
+                    i++;
+                    if (result == 0) {
+                        rows.append('</div>');
+                    }
+                    display = 1;
+                }
+            }); 
             
-            items.append('<div class="item-descripcion" id = "producto_des'+i+'">');
-            let items_des = $("#producto_des"+i);
-            items_des.append($('<p></p>').text(entry.descripcion));
-            items.append('</div>');
-
-            items.append('<div class="item-precio" id="producto_pre'+i+'">');
-            let items_pre = $("#producto_pre"+i);
-            items_pre.append($('<h4></h4>').text(entry.precio));
-            items.append('</div>');
-
-            items.append('<div class="item-comprar"><div class= "input-group"><input type="number" name="cantidad" class="form-control item-comprar-cantidad" value="1" min="1" max="20"><span class="input-group-btn"><button type="button" class="btn btn-default item-comprar-agregar" data-type="" data-field="">AGREGAR</button></span></div></div></div></div>');
-            i++;
-            if (result == 0) {
-                rows.append('</div>');
-            }
         })
     });
 });
