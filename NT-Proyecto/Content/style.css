@@ -27,6 +27,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
 }
 
 .margen {
@@ -37,8 +38,7 @@
     position: absolute;
     top: 78%;
     background-color: rgba(255,255,255,0.85);
-    width: 85%;
-    margin-left: 3%;
+    width: 82%;
     text-align: center;
 }
 

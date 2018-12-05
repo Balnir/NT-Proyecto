@@ -63,33 +63,37 @@ $(document).ready(function () {
     let banner = $('#banner');
     var categoria;
 
-    if ($('h1').text() == "Almacen") {
+    if ($('h1').text() == "almacen") {
+        categoria = "almacen";
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/almacen-superior.png"></div>');
-    } else if ($('h1').text() == "Bebidas") {
-        //url = 'https://api.myjson.com/bins/lr5ju';
+    } else if ($('h1').text() == "bebidas") {
         categoria = "bebidas";
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/bebidas-superior.png"></div>');
-    } else if ($('h1').text() == "Congelados") {
+    } else if ($('h1').text() == "congelados") {
+        categoria = "congelados";
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/congelados-superior.png"></div>');
-    } else if ($('h1').text() == "Lacteos") {
+    } else if ($('h1').text() == "lacteos") {
         categoria = "lacteos";
-        //url = 'https://api.myjson.com/bins/1ddxcu';
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/lacteos-superior.png"></div>');
-    } else if ($('h1').text() == "Limpieza") {
+    } else if ($('h1').text() == "limpieza") {
+        categoria = "limpieza";
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/limpieza-superior.png"></div>');
-    } else if ($('h1').text() == "Perfumeria") {
+    } else if ($('h1').text() == "perfumeria") {
+        categoria = "perfumeria";
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/perfumeria-superior.png"></div>');
     } else if ($('h1').text() == "Coto") {
+        categoria = "coto";
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/coto.png"></div>');
     } else if ($('h1').text() == "Disco") {
+        categoria = "disco;"
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/disco.jpg"></div>');
     } else if ($('h1').text() == "Walmart") {
+        categoria = "walmart";
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/walmart.png"></div>');
     } else if ($('h1').text() == "Carrefour") {
+        categoria + "carrefour";
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/carrefour2.jpg"></div>');
     } else {
-        banner.append('<div class="col-md-12"><img class="superior"></div>');
-        //url = 'https://api.myjson.com/bins/1ddxcu';
         categoria = $('h1').text();
     }
     
