@@ -59,19 +59,21 @@ $("#tarjeta").change(function () {
 /*carga dinamica de las views*/
 $(document).ready(function () {
 
-    var url
+    const url = 'https://api.myjson.com/bins/1ddxcu';
     let banner = $('#banner');
     var categoria;
 
     if ($('h1').text() == "Almacen") {
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/almacen-superior.png"></div>');
     } else if ($('h1').text() == "Bebidas") {
-        url = 'https://api.myjson.com/bins/lr5ju';
+        //url = 'https://api.myjson.com/bins/lr5ju';
+        categoria = "bebidas";
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/bebidas-superior.png"></div>');
     } else if ($('h1').text() == "Congelados") {
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/congelados-superior.png"></div>');
     } else if ($('h1').text() == "Lacteos") {
-        url = 'https://api.myjson.com/bins/179jmy';
+        categoria = "lacteos";
+        //url = 'https://api.myjson.com/bins/1ddxcu';
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/lacteos-superior.png"></div>');
     } else if ($('h1').text() == "Limpieza") {
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/limpieza-superior.png"></div>');
@@ -87,7 +89,7 @@ $(document).ready(function () {
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/carrefour2.jpg"></div>');
     } else {
         banner.append('<div class="col-md-12"><img class="superior"></div>');
-        url = 'https://api.myjson.com/bins/1ddxcu';
+        //url = 'https://api.myjson.com/bins/1ddxcu';
         categoria = $('h1').text();
     }
     
@@ -99,7 +101,8 @@ $(document).ready(function () {
 
             var tags = entry.tags.split(' ');
             var display = 0;
-            tags.forEach(function (tag){
+            tags.forEach(function (tag) {
+
                 if (categoria.includes(tag) && (display==0)) {
 
                     let rows = $('#container');
