@@ -12,21 +12,31 @@ namespace NT_Proyecto.Models
     {
         public Account()
         {
-            this.ventas = new HashSet<Ventas>();
-            this.medioDePago = new HashSet<MedioDePago>();
+            this.Ventas = new HashSet<Ventas>();
+            this.Domicilio = new Domicilio();
+            this.MedioDePago = new MedioDePago();
         }
         [Key]
         [Required]
         public int ID { get; set; }
-        public string nombre { get; set; }
-        public string apellido { get; set; }
-        public string nroTelefono { get; set; }
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
+        [Required(ErrorMessage = "Ingrese el numero de telefono")]
+        [Phone(ErrorMessage="Ingrese bien el numero de telefono")]
+        public string NroTelefono { get; set; }
         [Required]
-        public string email { get; set; } 
-        [PasswordPropertyText]
-        public string password { get; set; }
-        public virtual Domicilio domicilio { get; set; }
-        public virtual ICollection<MedioDePago> medioDePago { get; set; }
-        public virtual ICollection<Ventas> ventas { get; set; }
+        [EmailAddress(ErrorMessage = "Ingrese bien el correo electronico")]
+        public string Email { get; set; }
+        [Required(ErrorMessage="Ingrese la contraseña")]
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
+        [Required(ErrorMessage = "Ingrese la confirmacion de la contraseña")]
+        [DataType(DataType.Password)]
+        [Compare("Password", ErrorMessage = "Las contraseñas no son iguales, ingrese bien la confirmacion de la contraseña")]
+        public string ConfirmPassword { get; set; }
+        public virtual Domicilio Domicilio { get; set; }
+        public virtual MedioDePago MedioDePago { get; set; }
+        public virtual ICollection<Ventas> Ventas { get; set; }
     }
+    
 }

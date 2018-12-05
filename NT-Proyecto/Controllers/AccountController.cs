@@ -21,7 +21,7 @@ namespace NT_Proyecto.Controllers
             return View("Create");
         }
         //
-        // POST: /Student/
+        // POST: /Account
         [HttpPost]
         public ActionResult Create(Account Account, Domicilio domicilio, MedioDePago medioDePago)
         {

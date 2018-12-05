@@ -13,13 +13,13 @@ namespace NT_Proyecto.Models
     {
         public VentaProducto()
         {
-            this.ventas = new HashSet<Ventas>();
+            this.Ventas = new HashSet<Ventas>();
         }
         [Key]
         [Required]
         public int VentaProductoID { get; set; }
-        public virtual ICollection<Ventas> ventas { get; set; }
-        public int cantidad { get; set; }
+        public virtual ICollection<Ventas> Ventas { get; set; }
+        public int Cantidad { get; set; }
 
         //public Libros()
         //{
