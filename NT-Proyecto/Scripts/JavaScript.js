@@ -3,23 +3,6 @@ $("#login").click(function () {
     $("#myModal").modal();
 });
 
-/*dropdown barrios*/``
-$(document).ready(function () {
-
-    let dropdown = $("#barrio");
-    dropdown.empty();
-
-    dropdown.append('<option selected="true" disabled>Seleccione su barrio</option>');
-    dropdown.prop('selectedIndex', 0);
-
-    const url = 'https://api.myjson.com/bins/rrlzm';
-
-    $.getJSON(url, function (data) {
-        $.each(data, function (key, entry) {
-            dropdown.append($('<option></option>').attr('value', entry.abbreviation).text(entry.name));
-        })
-    });
-});
 
 /*validate pass y vencimiento tarjeta*/
 $(document).ready(function () {
@@ -56,16 +39,10 @@ $("#tarjeta").change(function () {
     };
 });
 
-function submitSuper() {
-    document.MyForm.submit();
-    return;
-}
-
-
 /*carga dinamica de las views*/
 $(document).ready(function () {
 
-    const url = 'https://api.myjson.com/bins/rjt7a';
+    const url = 'https://api.myjson.com/bins/r2wem';
     let banner = $('#banner');
     var categoria;
     var busqueda = $('h1').text().toLowerCase();
