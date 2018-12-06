@@ -1,13 +1,15 @@
 ﻿@model NT_Proyecto.Models.Account
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Registro";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    @Scripts.Render("~/Content")
+    @Scripts.Render("~/Scripts/js")
 }
 
 <h2>Create</h2>
 
-@using (Html.BeginForm())
+@using (Html.BeginForm("Create","Account", FormMethod.Post))
 {
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
@@ -15,7 +17,5 @@
     @Html.Partial("Editable")
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
 
+<script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.1.3/dist/bootstrap-validate.js"></script>

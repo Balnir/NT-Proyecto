@@ -1,0 +1,17 @@
+﻿@model NT_Proyecto.Models.Account
+@{
+    ViewBag.Title = "Confirmacion de datos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    @Scripts.Render("~/Content")
+    @Scripts.Render("~/Scripts/js")
+}
+
+
+<div class="container">
+    <h2>Creacion de Usuario</h2>
+    <div class="jumbotron">
+        <p>Felicitaciones @Html.DisplayFor( model => model.Nombre), @Html.DisplayFor( model => model.Apellido ). Usted se ha registrado exitosamente.</p>
+        <p> Recuerde que para logear debe usar su correo electronico: @Html.DisplayFor( model => model.Email) y su contraseña.</p>
+        <p> @Html.ActionLink("Para volver al principio", "Index","Home", htmlAttributes : new { @class = "submit btn btn-primary" })</p>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Error al logearse";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    @Scripts.Render("~/Content")
+    @Scripts.Render("~/Scripts/js")
+}
+<div class="container">
+    <div class="jumbotron">
+        <div class="text-primary">
+            <h2>Error al logearse</h2>
+            <p>Hubo un error el logearse:</p>
+            <p>Compruebe que su usuario/contraseña sea la correcta.</p>
+            <p>Si olvido su contraseña o su usuario contactese con Soporte@markost.com</p>
+        </div>
+    </div>
+    <button class="btn btn-primary btn-block"><a href="@Url.Action("Index", "Home")"></a>Volver al indice</button>
+</div>

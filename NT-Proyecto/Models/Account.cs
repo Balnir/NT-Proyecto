@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NT_Proyecto.Models
 {
@@ -30,6 +31,7 @@ namespace NT_Proyecto.Models
         [Required(ErrorMessage="Ingrese la contraseña")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
+        [NotMapped]
         [Required(ErrorMessage = "Ingrese la confirmacion de la contraseña")]
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage = "Las contraseñas no son iguales, ingrese bien la confirmacion de la contraseña")]

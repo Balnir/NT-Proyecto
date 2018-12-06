@@ -255,7 +255,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Account\Create.cshtml" />
-    <Content Include="Views\Account\Detail.cshtml" />
+    <Content Include="Views\Account\Details.cshtml" />
     <Content Include="Views\Account\Modify.cshtml" />
     <Content Include="Views\Account\Delete.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -274,6 +274,7 @@
     <Content Include="Views\Home\Walmart.cshtml" />
     <Content Include="Views\Home\Carrefour.cshtml" />
     <Content Include="Views\Home\Busqueda.cshtml" />
+    <Content Include="Views\Account\ErrorLog.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
