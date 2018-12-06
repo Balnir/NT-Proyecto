@@ -10,18 +10,18 @@
                 <div class="col-md-3">
                     <label for="name">Nombre</label>
                     @Html.TextBoxFor(model => model.Nombre,
-                   htmlAttributes : new { @class = "form-control", id = "name", placeholder = "Nombre" } )
+                   htmlAttributes : new { @class = "form-control", id = "name", placeholder = "Nombre", required = "required" } )
                     @Html.ValidationMessageFor(model => model.Nombre)
                 </div>
 
                 <div class="col-md-3">
                     <label for="last-name">Apellido</label>
-                    @Html.TextBoxFor(model => model.Apellido, htmlAttributes: new { @class = "form-control", id = "last-name", placeholder = "Apellido" })
+                    @Html.TextBoxFor(model => model.Apellido, htmlAttributes: new { @class = "form-control", id = "last-name", placeholder = "Apellido", required = "required" })
                     @Html.ValidationMessageFor(model => model.Apellido)
                 </div>
                 <div class="col-md-3">
                     <label for="phone">Telefono</label>
-                    @Html.TextBoxFor(model => model.NroTelefono, htmlAttributes: new { @class = "form-control", id = "phone", placeholder = "Telefono" })
+                    @Html.TextBoxFor(model => model.NroTelefono, htmlAttributes: new { @class = "form-control", id = "phone", placeholder = "Telefono", required = "required" })
                     @Html.ValidationMessageFor(model => model.NroTelefono)
                 </div>
             </div>
