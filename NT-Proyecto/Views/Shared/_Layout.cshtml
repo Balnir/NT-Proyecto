@@ -28,10 +28,6 @@
                 </div>
                 <div class="col-md-4 busqueda">
                     <form method="get" action="@Url.Action("Busqueda","Home")">
-                        @if (Session["log"] != null)
-                        {
-                            <b style="color:white; float:left; margin-right:20px; margin-top:7px;">Hola, @Session["log"].ToString()</b>
-                        }
                         <div class="input-group">
                             <input type="text" name="busqueda" class="form-control" placeholder="Buscar producto">
                             <div class="input-group-btn">
@@ -44,6 +40,10 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="nav navbar-nav navbar-right">
+                        @if (Session["log"] != null)
+                        {
+                            <b style="color:white; float:left; margin-right:20px; margin-top:7px;">Hola, @Session["log"].ToString()</b>
+                        }
                         <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Carrito</a></li>
                         @if (Session["log"] == null)
                         {
