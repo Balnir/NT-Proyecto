@@ -152,6 +152,7 @@ $(document).ready(function () {
             
         })
         if (search != true) {
+            banner.empty();
             banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/sad.jpg"></div>');
             document.getElementById("titulo").style.marginTop = "300px";
             let rows = $('#container');
