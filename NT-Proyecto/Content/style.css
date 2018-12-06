@@ -56,12 +56,15 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: white;
 }
 
 .pie {
     margin-top: 50px;
     background-color: #4B4B4B;
     height: 100px;
+    width: 100%;
+    bottom: 0;
 }
 
 .superior {
@@ -76,6 +79,7 @@
 .categoria-seccion {
     text-align: center;
     margin-top: 300px;
+    color: white;
 }
 
 .supermercado-seccion {
@@ -102,7 +106,7 @@
 .item-descripcion {
     margin-top: 10px;
     height: auto;
-    max-height: 40px;
+    max-height: 20px;
     width: 100%;
     text-align: center;
 }
@@ -153,4 +157,14 @@ invalid-feedback {
 
 .has-success .control-label {
     color: #333333 !important;
+}
+
+.item-imagen-super {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
 }

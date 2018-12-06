@@ -126,7 +126,9 @@
                         </div>
                     </div>
                 </form>
+                
             </div>
+
         </div>
     </div>
 </section>
@@ -137,24 +139,45 @@
         <hr />
         <div class="row margen">
             <div class="col-md-3">
-                <a href="@Url.Action("Coto", "Home")">
-                    <div class="super" style="background-image: url(../../Content/img/coto.png);"></div>
-                </a>
+                <form method="get" action="@Url.Action("Busqueda","Home")">
+                    <div class="categoria">
+                        <input type="text" name="busqueda" value="Coto" hidden>
+                        <div>
+                            <button class="btn categoria super" type="submit" style="background-image: url(../../Content/img/coto.png);">
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
             <div class="col-md-3">
-                <a href="@Url.Action("Disco", "Home")">
-                    <div class="super" style="background-image: url(../../Content/img/disco.jpg);"></div>
-                </a>
+                <form method="get" action="@Url.Action("Busqueda","Home")">
+                    <div class="categoria">
+                        <input type="text" name="busqueda" value="Disco" hidden>
+                        <div>
+                            <button class="btn categoria super" type="submit" style="background-image: url(../../Content/img/disco.jpg);"></button>
+                        </div>
+                    </div>
+                </form>
             </div>
             <div class="col-md-3">
-                <a href="@Url.Action("Walmart", "Home")">
-                    <div class="super" style="background-image: url(../../Content/img/walmart.png);"></div>
-                </a>
+                <form method="get" action="@Url.Action("Busqueda","Home")">
+                    <div class="categoria">
+                        <input type="text" name="busqueda" value="Walmart" hidden>
+                        <div>
+                            <button class="btn categoria super" type="submit" style="background-image: url(../../Content/img/walmart.png);"></button>
+                        </div>
+                    </div>
+                </form>
             </div>
             <div class="col-md-3">
-                <a href="@Url.Action("Carrefour", "Home")">
-                    <div class="super" style="background-image: url(../../Content/img/carrefour.png);"></div>
-                </a>
+                <form method="get" action="@Url.Action("Busqueda","Home")">
+                    <div class="categoria">
+                        <input type="text" name="busqueda" value="Carrefour" hidden>
+                        <div>
+                            <button class="btn categoria super" type="submit" style="background-image: url(../../Content/img/carrefour.PNG);"></button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

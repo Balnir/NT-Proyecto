@@ -253,19 +253,8 @@
     <Content Include="Views\Account\Delete.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Ventas\Detail.cshtml" />
-    <Content Include="Views\Home\Bebidas.cshtml" />
     <Content Include="Views\Home\Registro.cshtml" />
-    <Content Include="Views\Home\Supermercado.cshtml" />
     <Content Include="Views\Shared\Editable.cshtml" />
-    <Content Include="Views\Home\Lacteos.cshtml" />
-    <Content Include="Views\Home\Limpieza.cshtml" />
-    <Content Include="Views\Home\Perfumeria.cshtml" />
-    <Content Include="Views\Home\Almacen.cshtml" />
-    <Content Include="Views\Home\Congelados.cshtml" />
-    <Content Include="Views\Home\Coto.cshtml" />
-    <Content Include="Views\Home\Disco.cshtml" />
-    <Content Include="Views\Home\Walmart.cshtml" />
-    <Content Include="Views\Home\Carrefour.cshtml" />
     <Content Include="Views\Home\Busqueda.cshtml" />
   </ItemGroup>
   <ItemGroup>

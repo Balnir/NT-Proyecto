@@ -1,78 +1,77 @@
-﻿ @{
+﻿@{
     ViewBag.Title = "Registro";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    @Scripts.Render("~/Content")
 }
 @Scripts.Render("~/Scripts/js")
+
 <section>
     <form class="margen" id="form-registro">
         <h3>Usuario</h3>
         <hr />
         <div class="row margen">
-            <div class="col-md-3">
-                <label for="name">Nombre</label>
-                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required="required">
+            <div class="col-md-3 form-group has-feedback">
+                <label for="name" class="control-label">Nombre</label>
+                <input type="text" name="name" class="form-control with-errors" id="name" placeholder="Nombre" required="required">
             </div>
-            <div class="col-md-3">
-                <label for="last-name">Apellido</label>
-                <input type="text" name="last-name" class="form-control" id="last-name" placeholder="Apellido" required="required">
+            <div class="col-md-3 form-group has-feedback">
+                <label for="last-name" class="control-label">Apellido</label>
+                <input type="text" name="last-name" class="form-control with-errors" id="last-name" placeholder="Apellido" required="required">
             </div>
         </div>
         <div class="row margen">
-            <div class="col-md-3">
+            <div class="col-md-3 form-group has-feedback">
                 <label for="email" class="control-label">E-mail</label>
-                <input type="email" name="email" class="form-control" id="email" placeholder="e-mail" required="required">
+                <input type="email" name="email" class="form-control with-errors" id="email" placeholder="e-mail" required="required">
             </div>
-            <div class="col-md-3">
-                <label for="pass">Contraseña</label>
-                <input type="password" name="pass" class="form-control" id="pass" placeholder="contraeña" required="required">
+            <div class="col-md-3 form-group has-feedback">
+                <label for="pass" class="control-label">Contraseña</label>
+                <input type="password" name="pass" class="form-control with-errors" id="pass" placeholder="contraeña" required="required">
             </div>
-            <div class="col-md-3">
-                <label for="pass2">Reingrese contraseña</label>
-                <input type="password" name="pass2" class="form-control" id="pass2" placeholder="reingrese contraseña" required="required">
+            <div class="col-md-3 form-group has-feedback">
+                <label for="pass2" class="control-label">Reingrese contraseña</label>
+                <input type="password" name="pass2" class="form-control with-errors" id="pass2" placeholder="reingrese contraseña" required="required">
             </div>
         </div>
         <h3>Envío</h3>
         <hr />
         <div class="row margen">
-            <div class="col-md-3">
-                <label for="barrio">Barrio</label>
-                <select class="form-control" id="barrio" name="barrio" required="required"></select>
+            <div class="col-md-3 form-group has-feedback">
+                <label for="barrio" class="control-label">Barrio</label>
+                <select class="form-control with-errors" id="barrio" name="barrio" required="required"></select>
             </div>
-            <div class="col-md-6">
-                <label for="addres">Dirección</label>
-                <input type="text" name="addres" class="form-control" id="addres" placeholder="Dirección" required="required">
+            <div class="col-md-6 form-group has-feedback">
+                <label for="addres" class="control-label">Dirección</label>
+                <input type="text" name="addres" class="form-control with-errors" id="addres" placeholder="Dirección" required="required">
             </div>
         </div>
         <h3>Pago</h3>
         <hr />
         <div class="row margen">
-            <div class="col-md-3">
-                <label for="tarjeta">Tarjeta</label>
-                <select class="form-control" id="tarjeta" name="tarjeta" required="required">
-                    <option selected>Seleccione tarjeta</option>
+            <div class="col-md-3 form-group has-feedback">
+                <label for="tarjeta" class="control-label">Tarjeta</label>
+                <select class="form-control with-errors" id="tarjeta" name="tarjeta" required="required">
+                    <option value="">Seleccione su tarjeta</option>
                     <option value="visa">Visa</option>
                     <option value="amex">AMEX</option>
                 </select>
             </div>
-            <div class="col-md-2">
-                <label for="tarjeta-numero">Numero</label>
-                <input type="text" name="tarjeta-numero" class="form-control" id="tarjeta-numero" placeholder="Numero de tarjeta" required="required">
+            <div class="col-md-2 form-group has-feedback">
+                <label for="tarjeta-numero" class="control-label">Numero</label>
+                <input type="text" name="tarjeta-numero" class="form-control with-errors" id="tarjeta-numero" placeholder="Numero de tarjeta" required="required">
             </div>
-            <div class="col-md-2">
-                <label for="tarjeta-vencimiento">Vencimiento</label>
-                <input type="text" name="tarjeta-vencimiento" class="form-control" id="tarjeta-vencimiento" placeholder="MMAA" required="required">
+            <div class="col-md-2 form-group has-feedback">
+                <label for="tarjeta-vencimiento" class="control-label">Vencimiento</label>
+                <input type="text" name="tarjeta-vencimiento" class="form-control with-errors" id="tarjeta-vencimiento" placeholder="MMAA" required="required">
             </div>
-            <div class="col-md-2">
-                <label for="tarjeta-codigo">Cod de Seguridad</label>
-                <input type="text" name="tarjeta-codigo" class="form-control" id="tarjeta-codigo" placeholder="Cod" required="required">
+            <div class="col-md-2 form-group has-feedback">
+                <label for="tarjeta-codigo" class="control-label">Cod de Seguridad</label>
+                <input type="text" name="tarjeta-codigo" class="form-control with-errors" id="tarjeta-codigo" placeholder="Cod" required="required">
             </div>
-
         </div>
         <div class="row margen">
             <div class="col-md-9 registro">
                 <div class="form-group">
-                    <button type="submit" class="submit btn btn-primary" value="Submit">Registrarse</button>
+                    <button type="submit" class="submit btn btn-primary" value="Submit" id="submit">Registrarse</button>
                 </div>
             </div>
 
