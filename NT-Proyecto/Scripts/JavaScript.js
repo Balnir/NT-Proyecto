@@ -65,7 +65,7 @@ function submitSuper() {
 /*carga dinamica de las views*/
 $(document).ready(function () {
 
-    const url = 'https://api.myjson.com/bins/qw8fq';
+    const url = 'https://api.myjson.com/bins/rjt7a';
     let banner = $('#banner');
     var categoria;
     var busqueda = $('h1').text().toLowerCase();
