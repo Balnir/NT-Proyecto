@@ -42,6 +42,7 @@ $("#tarjeta").change(function () {
     bootstrapValidate('#tarjeta-numero', 'numeric:Ingrese sólo números');
     bootstrapValidate('#tarjeta-codigo', 'numeric:Ingrese sólo números');
 
+
     if (value == "visa") {
         bootstrapValidate('#tarjeta-numero', 'min:16:Debe tener 16 dígitos');
         bootstrapValidate('#tarjeta-numero', 'max:16:Debe tener 16 dígitos');
@@ -55,52 +56,63 @@ $("#tarjeta").change(function () {
     };
 });
 
+function submitSuper() {
+    document.MyForm.submit();
+    return;
+}
+
 
 /*carga dinamica de las views*/
 $(document).ready(function () {
 
-    var url
+    const url = 'https://api.myjson.com/bins/rjt7a';
     let banner = $('#banner');
     var categoria;
+    var busqueda = $('h1').text().toLowerCase();
 
-    if ($('h1').text() == "Almacen") {
+    if (busqueda == "almacen") {
+        categoria = "almacen";
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/almacen-superior.png"></div>');
-    } else if ($('h1').text() == "Bebidas") {
-        url = 'https://api.myjson.com/bins/lr5ju';
+    } else if (busqueda == "bebidas") {
+        categoria = "bebidas";
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/bebidas-superior.png"></div>');
-    } else if ($('h1').text() == "Congelados") {
+    } else if (busqueda == "congelados") {
+        categoria = "congelados";
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/congelados-superior.png"></div>');
-    } else if ($('h1').text() == "Lacteos") {
-        url = 'https://api.myjson.com/bins/179jmy';
+    } else if (busqueda == "lacteos") {
+        categoria = "lacteos";
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/lacteos-superior.png"></div>');
-    } else if ($('h1').text() == "Limpieza") {
+    } else if (busqueda == "limpieza") {
+        categoria = "limpieza";
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/limpieza-superior.png"></div>');
-    } else if ($('h1').text() == "Perfumeria") {
+    } else if (busqueda == "perfumeria") {
+        categoria = "perfumeria";
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/perfumeria-superior.png"></div>');
-    } else if ($('h1').text() == "Coto") {
+    } else if (busqueda == "coto") {
+        categoria = "coto";
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/coto.png"></div>');
-    } else if ($('h1').text() == "Disco") {
+    } else if (busqueda == "disco") {
+        categoria = "disco"
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/disco.jpg"></div>');
-    } else if ($('h1').text() == "Walmart") {
+    } else if (busqueda == "walmart") {
+        categoria = "walmart";
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/walmart.png"></div>');
-    } else if ($('h1').text() == "Carrefour") {
+    } else if (busqueda == "carrefour") {
+        categoria = "carrefour";
         banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/carrefour2.jpg"></div>');
     } else {
-        banner.append('<div class="col-md-12"><img class="superior"></div>');
-        url = 'https://api.myjson.com/bins/1ddxcu';
-        categoria = $('h1').text();
+        categoria = $('h1').text().toLowerCase().split(" ").join("");
+        console.log(categoria);
+        document.getElementById("titulo").style.marginTop = "75px";
     }
     
     var i = 0;
     var j = 0;
-
+    search = false;
     $.getJSON(url, function (data) {
         $.each(data, function (key, entry) {
 
-            var tags = entry.tags.split(' ');
-            var display = 0;
-            tags.forEach(function (tag){
-                if (categoria.includes(tag) && (display==0)) {
+                if (entry.tags.toLowerCase().includes(categoria)) {
 
                     let rows = $('#container');
                     var result = i % 4;
@@ -116,7 +128,8 @@ $(document).ready(function () {
 
                     items.append('<div id="producto_img' + i + '">')
                     let items_img = $("#producto_img" + i);
-                    items_img.append($('<img class="item-imagen">').attr('src', entry.imagen));
+                    items_img.append($('<img class="item-imagen" id="item_image">').attr('src', entry.imagen));
+                    items_img.append($('<img class="item-imagen-super" id="item_image">').attr('src', entry.supermercado));
                     items.append('</div>');
 
                     items.append('<div class="item-descripcion" id = "producto_des' + i + '">');
@@ -134,10 +147,19 @@ $(document).ready(function () {
                     if (result == 0) {
                         rows.append('</div>');
                     }
-                    display = 1;
+                    search = true;
                 }
-            }); 
             
         })
+        if (search != true) {
+            banner.empty();
+            banner.append('<div class="col-md-12"><img class="superior" src="../Content/img/sad.jpg"></div>');
+            document.getElementById("titulo").style.marginTop = "300px";
+            let rows = $('#container');
+            rows.append('<div class="row margen" id="row_productos">');
+            let row_items = $("#row_productos");
+            row_items.append('<div class="col-md-12" id="col_producto" align="center"><h1>No se han encontrado resultados</h1>');
+        }
     });
+   
 });

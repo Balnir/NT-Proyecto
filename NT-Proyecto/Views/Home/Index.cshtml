@@ -40,65 +40,93 @@
         <hr />
         <div class="row margen">
             <div class="col-md-3">
-                <a href="@Url.Action("Bebidas", "Home")">
-                    <div class="categoria" style="background-image: url(../../Content/img/bebidas.PNG);">
-                        <div class="categoria-etiqueta-sm">
-                            <h3>Bebidas</h3>
+                <form method="get" action="@Url.Action("Busqueda","Home")">
+                    <div class="categoria">
+                        <input type="text" name="busqueda" value="bebidas" hidden>
+                        <div>
+                            <button class="btn btn-default categoria" type="submit" style="background-image: url(../../Content/img/bebidas.PNG);">
+                                <div class="categoria-etiqueta-sm">
+                                    <h3>Bebidas</h3>
+                                </div>
+                            </button>
                         </div>
                     </div>
-                </a>
+                </form>
             </div>
 
             <div class="col-md-3">
-                <a href="@Url.Action("Lacteos", "Home")">
-                    <div class="categoria" style="background-image: url(../../Content/img/lacteos.png);">
-                        <div class="categoria-etiqueta-sm">
-                            <h3>Lácteos</h3>
+                <form method="get" action="@Url.Action("Busqueda","Home")">
+                    <div class="categoria">
+                        <input type="text" name="busqueda" value="lacteos" hidden>
+                        <div>
+                            <button class="btn btn-default categoria" type="submit" style="background-image: url(../../Content/img/lacteos.PNG);">
+                                <div class="categoria-etiqueta-sm">
+                                    <h3>Lacteos</h3>
+                                </div>
+                            </button>
                         </div>
                     </div>
-                </a>
+                </form>
             </div>
 
             <div class="col-md-6">
-                <a href="@Url.Action("Limpieza", "Home")">
-                    <div class="categoria" style="background-image: url(../../Content/img/limpieza.jpg);">
-                        <div class="categoria-etiqueta-lg">
-                            <h3>Limpieza</h3>
+                <form method="get" action="@Url.Action("Busqueda","Home")">
+                    <div class="categoria">
+                        <input type="text" name="busqueda" value="limpieza" hidden>
+                        <div>
+                            <button class="btn btn-default categoria" type="submit" style="background-image: url(../../Content/img/limpieza.jpg);">
+                                <div class="categoria-etiqueta-sm">
+                                    <h3>Limpieza</h3>
+                                </div>
+                            </button>
                         </div>
                     </div>
-                </a>
+                </form>
             </div>
         </div>
-
         <div class="row margen">
-
             <div class="col-md-6">
-                <a href="@Url.Action("Almacen", "Home")">
-                    <div class="categoria" style="background-image: url(../../Content/img/almacen.jpg);">
-                        <div class="categoria-etiqueta-lg">
-                            <h3>Almacén</h3>
+                <form method="get" action="@Url.Action("Busqueda","Home")">
+                    <div class="categoria">
+                        <input type="text" name="busqueda" value="almacen" hidden>
+                        <div>
+                            <button class="btn btn-default categoria" type="submit" style="background-image: url(../../Content/img/almacen.jpg);">
+                                <div class="categoria-etiqueta-sm">
+                                    <h3>Almacen</h3>
+                                </div>
+                            </button>
                         </div>
                     </div>
-                </a>
+                </form>
             </div>
             <div class="col-md-3">
-                <a href="@Url.Action("Congelados", "Home")" class="categoria-hover">
-                    <div class="categoria" style="background-image: url(../../Content/img/congelados.png);">
-                        <div class="categoria-etiqueta-sm">
-                            <h3>Congelados</h3>
+                <form method="get" action="@Url.Action("Busqueda","Home")">
+                    <div class="categoria">
+                        <input type="text" name="busqueda" value="congelados" hidden>
+                        <div>
+                            <button class="btn btn-default categoria" type="submit" style="background-image: url(../../Content/img/congelados.PNG);">
+                                <div class="categoria-etiqueta-sm">
+                                    <h3>Congelados</h3>
+                                </div>
+                            </button>
                         </div>
                     </div>
-                </a>
+                </form>
             </div>
-
             <div class="col-md-3">
-                <a href="@Url.Action("Perfumeria", "Home")">
-                    <div class="categoria" style="background-image: url(../../Content/img/perfumeria.png);">
-                        <div class="categoria-etiqueta-sm">
-                            <h3>Perfumería</h3>
+                <form method="get" action="@Url.Action("Busqueda","Home")">
+                    <div class="categoria">
+                        <input type="text" name="busqueda" value="perfumeria" hidden>
+                        <div>
+                            <button class="btn btn-default categoria" type="submit" style="background-image: url(../../Content/img/perfumeria.PNG);">
+                                <div class="categoria-etiqueta-sm">
+                                    <h3>Perfumeria</h3>
+                                </div>
+                            </button>
                         </div>
                     </div>
-                </a>
+                </form>
+                
             </div>
 
         </div>
@@ -111,24 +139,45 @@
         <hr />
         <div class="row margen">
             <div class="col-md-3">
-                <a href="@Url.Action("Coto", "Home")">
-                    <div class="super" style="background-image: url(../../Content/img/coto.png);"></div>
-                </a>
+                <form method="get" action="@Url.Action("Busqueda","Home")">
+                    <div class="categoria">
+                        <input type="text" name="busqueda" value="Coto" hidden>
+                        <div>
+                            <button class="btn categoria super" type="submit" style="background-image: url(../../Content/img/coto.png);">
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
             <div class="col-md-3">
-                <a href="@Url.Action("Disco", "Home")">
-                    <div class="super" style="background-image: url(../../Content/img/disco.jpg);"></div>
-                </a>
+                <form method="get" action="@Url.Action("Busqueda","Home")">
+                    <div class="categoria">
+                        <input type="text" name="busqueda" value="Disco" hidden>
+                        <div>
+                            <button class="btn categoria super" type="submit" style="background-image: url(../../Content/img/disco.jpg);"></button>
+                        </div>
+                    </div>
+                </form>
             </div>
             <div class="col-md-3">
-                <a href="@Url.Action("Walmart", "Home")">
-                    <div class="super" style="background-image: url(../../Content/img/walmart.png);"></div>
-                </a>
+                <form method="get" action="@Url.Action("Busqueda","Home")">
+                    <div class="categoria">
+                        <input type="text" name="busqueda" value="Walmart" hidden>
+                        <div>
+                            <button class="btn categoria super" type="submit" style="background-image: url(../../Content/img/walmart.png);"></button>
+                        </div>
+                    </div>
+                </form>
             </div>
             <div class="col-md-3">
-                <a href="@Url.Action("Carrefour", "Home")">
-                    <div class="super" style="background-image: url(../../Content/img/carrefour.png);"></div>
-                </a>
+                <form method="get" action="@Url.Action("Busqueda","Home")">
+                    <div class="categoria">
+                        <input type="text" name="busqueda" value="Carrefour" hidden>
+                        <div>
+                            <button class="btn categoria super" type="submit" style="background-image: url(../../Content/img/carrefour.PNG);"></button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
