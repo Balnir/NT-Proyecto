@@ -12,10 +12,6 @@ namespace NT_Proyecto.Controllers
         //
         // GET: /Account/
         private MarketContext db = new MarketContext();
-        public ActionResult Index()
-        {
-            return View();
-        }
         //
         // GET: Details
         public ActionResult Details(int id)
@@ -46,6 +42,11 @@ namespace NT_Proyecto.Controllers
         {
             return View();
         }
+        //GET: /Account/ErrorReg
+        public ActionResult ErrorReg()
+        {
+            return View();
+        }
         //
         // POST: /Account/LogIn
         //
@@ -54,32 +55,39 @@ namespace NT_Proyecto.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Login(Account Account)
         {
-                var v = db.Accounts.Where(l => l.Email.Equals(Account.Email) && Account.Password.Equals(Account.Password)).FirstOrDefault();
-                if (v != null)
-                {
-                    Session["log"] = v.Nombre + " " + v.Apellido;
-                    return RedirectToAction("Index", "Home");
-                }
-                else
-                {
-                    return RedirectToAction("ErrorLog", "Account");
-                }
+            var v = db.Accounts.Where(l => l.Email.Equals(Account.Email) && l.Password.Equals(Account.Password)).FirstOrDefault();
+            if (v != null)
+            {
+                Session["log"] = v.Nombre + " " + v.Apellido;
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                return RedirectToAction("ErrorLog", "Account");
+            }
             //return RedirectToAction("Index", "Home");
         }
-        
+
         // POST: /Account/Create
         [HttpPost]
         public ActionResult Create(Account Account)
         {
-            if (ModelState.IsValid)
-            {
-                db.Accounts.Add(Account);
-                db.SaveChanges();
-                return RedirectToAction("Details", new { id = Account.ID });
+            var isRepeated = db.Accounts.FirstOrDefault(l => l.Email.Equals(Account.Email));
+            if (isRepeated == null) { 
+                if (ModelState.IsValid)
+                {
+                    db.Accounts.Add(Account);
+                    db.SaveChanges();
+                    return RedirectToAction("Details", new { id = Account.ID });
+                }
+                else
+                {
+                    return RedirectToAction("ErrorReg", "Account");
+                }
             }
             else
             {
-                return View(Account);
+                return RedirectToAction("ErrorReg", "Account");
             }
         }
     }

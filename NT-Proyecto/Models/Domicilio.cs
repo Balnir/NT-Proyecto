@@ -13,8 +13,9 @@ namespace NT_Proyecto.Models
             [Key]
             [Required]
             public int DomId { get; set; }
-            public Barrio Barrio { get; set; }
             [Required]
+            public Barrio Barrio { get; set; }
+            [Required(ErrorMessage="Ingrese una direccion")]
             public string Direccion { get; set; }
 
             //public Domicilio (int DomId, Barrio Barrio, string direccion)

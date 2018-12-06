@@ -26,17 +26,6 @@ namespace NT_Proyecto.Models
         [Required(ErrorMessage = "Ingrese el codigo verificador de la tarjeta")]
         [StringLength(3, ErrorMessage = "Ingrese bien el codigo verificador de la tarjeta")]
         public string codigoVerificador { get; set; }
-
-        //public MedioDePago (int MDPId, string nroTarjeta, string nombreTitular, EnteEmisor nombreEmisor, string vencimiento, string codigoVerificador)
-        //{
-        //    this.MDPId = MDPId;
-        //    this.nroTarjeta = nroTarjeta;
-        //    this.nombreTitular = nombreTitular;
-        //    this.nombreEmisor = nombreEmisor;
-        //    this.vencimiento = vencimiento;
-        //    this.codigoVerificador = codigoVerificador;
-        //}
-
     }
     public enum EnteEmisor
     {

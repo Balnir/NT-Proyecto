@@ -20,12 +20,14 @@ namespace NT_Proyecto.Models
         [Key]
         [Required]
         public int ID { get; set; }
+        [Required(ErrorMessage = "Ingrese el Nombre")]
         public string Nombre { get; set; }
+        [Required(ErrorMessage = "Ingrese el Apellido")]
         public string Apellido { get; set; }
         [Required(ErrorMessage = "Ingrese el numero de telefono")]
         [Phone(ErrorMessage="Ingrese bien el numero de telefono")]
         public string NroTelefono { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Ingrese el correo")]
         [EmailAddress(ErrorMessage = "Ingrese bien el correo electronico")]
         public string Email { get; set; }
         [Required(ErrorMessage="Ingrese la contraseña")]

@@ -253,10 +253,17 @@
     <Content Include="Views\Account\Delete.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Ventas\Detail.cshtml" />
-    <Content Include="Views\Home\Registro.cshtml" />
     <Content Include="Views\Shared\Editable.cshtml" />
     <Content Include="Views\Home\Busqueda.cshtml" />
     <Content Include="Views\Account\ErrorLog.cshtml" />
+    <Content Include="Web.config" />
+    <Content Include="Views\Account\ErrorReg.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
